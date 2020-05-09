@@ -7,7 +7,7 @@ import time
 import urllib.parse
 from concurrent.futures import ThreadPoolExecutor,as_completed
 from inspect import isgeneratorfunction
-from weibo_utils import headers,logger,requestQueue,request_variable_init
+from settings import headers,logger,requestQueue,request_variable_init
 from models import *
 
 # 不设职位搜索条件

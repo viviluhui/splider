@@ -270,7 +270,7 @@ def weibo_login_cookie(user, password):
 
 if __name__ == '__main__':
     user='18162758696'
-    password='qgjiqpl1987'
+    password='1111111'
     session = weibo_login_cookie(user, password)
 
 

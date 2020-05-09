@@ -155,7 +155,7 @@ def init_log(filename=None):
     # print(dirname,file)
     # print(basefile)
     if filename is None:
-        filename = '{}.log'.format(basefile)
+        filename = '../logs/{}.log'.format(basefile)
     print(filename)
     # fh = logging.FileHandler(filename, encoding='utf8')
     fh = logging.handlers.RotatingFileHandler(filename, mode='w', maxBytes=100000, backupCount=3, encoding='utf8')

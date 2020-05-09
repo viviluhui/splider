@@ -6,7 +6,6 @@ from sqlalchemy.orm import sessionmaker
 
 Base = declarative_base()
 
-
 class RequestInfo(Base):
     __tablename__ = 'request_info'
 
@@ -41,7 +40,6 @@ class RequestInfo(Base):
     def __lt__(self, other):
         return self.requestTime < other.requestTime
 
-
 class JobInfo(Base):
     __tablename__='job_info'
     id = Column(Integer(), primary_key=True)
@@ -70,9 +68,10 @@ class JobInfo(Base):
     def __lt__(self, other):
         return self.sourceDate < other.sourceDate
 
+base_path=r'D:\project\python\spider'
+db_url = 'sqlite:///{}\jobs.db?check_same_thread=False'.format(base_path)
 
-# engine = create_engine(r'sqlite:///D:\project\python\pylib\jobs.db',echo=True)
-engine = create_engine(r'sqlite:///D:\project\python\pylib\jobs.db?check_same_thread=False',echo=False)
+engine = create_engine(db_url,echo=False)
 Session = sessionmaker(bind=engine)
 dbsession = Session()
 
