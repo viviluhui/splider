@@ -251,10 +251,7 @@ def weibo_http_get_navigation(url, session=None):
 
     return requestInfo, None
 
-
-
 #
-
 
 if __name__=='__main__':
     txt = '''https://d.weibo.com/1087030002_2975_5001_30'''

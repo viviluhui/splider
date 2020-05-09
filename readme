@@ -1,0 +1,17 @@
+easy_splider目录为结构简单工程量小的爬虫代码
+
+51job求职信息爬虫
+    51job.py单线程指定城市爬取,无数据库
+    51job_threads.py models.py settings.py 多线程 支持中断重启 数据存入数据库
+    问题：多线程爬取验证、爬虫效率分析、如何增量爬取数据、部分求职信息网页解析错误
+
+音乐下载爬虫
+    music.py music_models.py http://music.taihe.com/网站音乐信息爬取 音乐下载  存在过量访问被限制问题
+    music_login.py http://music.taihe.com/网站登录
+
+微博人员信息爬虫
+    weibo_login.py 登录
+    webo_models.py 数据库
+    weibo_parse.py 解析
+    weibo_scrapy.py 爬虫控制逻辑
+    weibo_utils.py 日志等工具
